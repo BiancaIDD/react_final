@@ -1,16 +1,17 @@
-
-import React from "react";
 import Navbar from "../../components/navbar/Nabvar";
 import './AboutMe.css'
+import * as React from 'react';
+
 
 export default function AboutMe() {
+  
   return (
-    <div >
+    <div className="AboutMe" id="aboutme">
       <Navbar/>
-      <div className="AboutMe">
+      <div className="tittle">
         <h2>About Me</h2>
       </div>
-      <div>
+      <div className="information">
         <p>
           About me: I am a 20-year-old girl with higher aspirations, I have been
           programming for approximately 3 months, the language that I have
@@ -22,3 +23,7 @@ export default function AboutMe() {
     </div>
   );
 }
+
+
+
+
