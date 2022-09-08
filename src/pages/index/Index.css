@@ -1,0 +1,15 @@
+.index-conteiner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: #171718;
+  background-image: url('https://i.pinimg.com/564x/6a/92/25/6a9225d6ee01ac4370f2bc6013e2ddb0.jpg');
+}
+
+.index__cards{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+

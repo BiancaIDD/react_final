@@ -1,15 +1,18 @@
-
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import './App.css';
-import Contact from './components/contact/Contact';
-import Avatar from './components/navbar/img/Foto';
-import Navbar from './components/navbar/Nabvar';
-import AboutMe from './components/aboutme/AboutMe';
+import Index from './pages/index/Index';
+import AuthTesting from "./pages/testing/authroutes";
 
 function App() {
   return (
-    <div className="App">
-      <AboutMe/>
-    </div>
+    
+      <BrowserRouter >
+    <Routes>
+      <Route index element={<Index/>}/>
+      <Route path='pagina_priv' element={< AuthTesting/>}/>
+    </Routes>
+    </BrowserRouter >
+    
   );
 }
 

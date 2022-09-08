@@ -3,7 +3,8 @@ import * as React from "react";
 import ImgAvatar from "./img/Foto";
 import Contact from "../contact/Contact";
 import MenuIcon from "@mui/icons-material/Menu";
-import { blueGrey } from "@mui/material/colors";
+import { teal } from "@mui/material/colors";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   function onClick(event){
@@ -16,7 +17,7 @@ export default function Navbar() {
     setIsVisible(false)
     }else{
       navbarElement.style.visibility="visible";
-      navbarDiv.style.backgroundColor=" #9ea0a2"
+      navbarDiv.style.backgroundColor=" #6a6e73"
     setIsVisible(true)
     }
   }
@@ -27,7 +28,7 @@ export default function Navbar() {
   return (
     <div className="Navbar" id="Navbar">
       <button className="Navbar__Menu" onClick={onClick}>
-        <MenuIcon sx={{ fontSize: 60, color: blueGrey[500] }} />
+        <MenuIcon sx={{ fontSize: 60, color: teal[50] }} />
       </button>
       <ul className="Navbar__Routes" id="Navbar__Routes">
         <li className="Navbar__animation">
@@ -35,7 +36,7 @@ export default function Navbar() {
           <ImgAvatar />{" "}
         </li>
         <li className="Navbar__animation">
-          <link></link>
+          <Link to='./pagina_priv'>Page</Link>
         </li>
         <li className="Navbar__animation">
           <link></link>

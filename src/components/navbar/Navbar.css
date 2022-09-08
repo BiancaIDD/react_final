@@ -5,12 +5,13 @@
 }
 
 .Navbar{
-  background-color: #9ea0a2;
-  width: 250px;
+  background-color: #6a6e73;
+  width: 270px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
+  color: white;
 }
 
 .Navbar__Routes{
@@ -18,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 30px;
 }
 
 .Navbar__Routes > li{
