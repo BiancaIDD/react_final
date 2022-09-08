@@ -9,11 +9,14 @@ export default function Navbar() {
   function onClick(event){
     event.preventDefault()
     const navbarElement = document.getElementById("Navbar__Routes")
+    const navbarDiv = document.getElementById("Navbar")
     if(isVisible){
       navbarElement.style.visibility="hidden";
+      navbarDiv.style.backgroundColor="transparent"
     setIsVisible(false)
     }else{
       navbarElement.style.visibility="visible";
+      navbarDiv.style.backgroundColor=" #9ea0a2"
     setIsVisible(true)
     }
   }
@@ -22,7 +25,7 @@ export default function Navbar() {
   
 
   return (
-    <div className="Navbar">
+    <div className="Navbar" id="Navbar">
       <button className="Navbar__Menu" onClick={onClick}>
         <MenuIcon sx={{ fontSize: 60, color: blueGrey[500] }} />
       </button>
