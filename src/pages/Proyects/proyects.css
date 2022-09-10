@@ -1,0 +1,20 @@
+.proyects-conteiner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-image:url(https://i.pinimg.com/564x/b5/d6/c2/b5d6c252e9da058e86167f941e7473e3.jpg) ;
+color: white;
+}
+
+.proyects__cards{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.proyects__card1, .proyects__card2{
+display: flex;
+flex-direction: row;
+gap: 20px;
+}

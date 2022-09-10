@@ -4,26 +4,28 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import Foto from "./img/Myhobbies.jpg";
+import proyecto4 from "./img/proyecto4.png";
 
-export default function MyHobbies() {
-  return(
-    <Card sx={{ maxWidth: 350, display: 'flex',
-    flexWrap: 'wrap',
-    '& > :not(style)': {
-      m: 1} }}>
+export default function Card4() {
+  return (
+    <Card
+      sx={{
+        maxWidth: 370,
+        display: "flex",
+        "& > :not(style)": {
+          m: 1,
+        },
+      }}
+    >
       <CardActionArea>
-        <CardMedia component="img" height="100" image={Foto} />
+        <CardMedia component="img" height="140" image={proyecto4} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Hobbies
+            crypto quoter
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            <ul>
-              <li>listen podcast</li>
-              <li>I love music and listen to my music in random</li>
-              <li>I like to write novels</li>
-            </ul>
+            Page to know how much the different cryptocurrencies cost and 3 main
+            pages to buy
           </Typography>
         </CardContent>
       </CardActionArea>

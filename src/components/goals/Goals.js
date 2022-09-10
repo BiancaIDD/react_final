@@ -8,7 +8,10 @@ import Foto from "./img/goals.jpg";
 
 export default function Goals() {
   return(
-    <Card sx={{ maxWidth: 360 }}>
+    <Card sx={{ maxWidth: 360, display: 'flex',
+    flexWrap: 'wrap',
+    '& > :not(style)': {
+      m: 1,} }}>
       <CardActionArea>
         <CardMedia component="img" height="100" image={Foto} />
         <CardContent>

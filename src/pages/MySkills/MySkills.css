@@ -1,0 +1,13 @@
+.myskills-conteiner{
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-image:url(https://i.pinimg.com/564x/1d/8d/64/1d8d641227621d6c86d277707b444b52.jpg) ;
+color: white;
+}
+
+.myskills__boxs{
+  display: flex;
+  align-items: center;
+}

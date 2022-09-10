@@ -6,6 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { teal } from "@mui/material/colors";
 import { Link } from "react-router-dom";
 
+
 export default function Navbar() {
   function onClick(event){
     event.preventDefault()
@@ -17,7 +18,7 @@ export default function Navbar() {
     setIsVisible(false)
     }else{
       navbarElement.style.visibility="visible";
-      navbarDiv.style.backgroundColor=" #6a6e73"
+      navbarDiv.style.backgroundColor= "transparent";
     setIsVisible(true)
     }
   }
@@ -35,15 +36,19 @@ export default function Navbar() {
         <h3>Bianca I. Davila D.</h3>
           <ImgAvatar />{" "}
         </li>
-        <li className="Navbar__animation">
-          <Link to='./pagina_priv'>Page</Link>
+        <li>
+          <Link style={{color:teal[50]}} to='/my_skills'>Skills</Link>
         </li>
         <li className="Navbar__animation">
-          <link></link>
+          <Link style={{color:teal[50]}} to='/projects'>My Projects</Link>
+        </li>
+        <li className="Navbar__animation">
+          <Link style={{color:teal[50]}} to='/pagina_priv'>Private</Link>
         </li>
         <li className="Navbar__animation">
           <Contact />
         </li>
+
       </ul>
     </div>
   );

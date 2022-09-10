@@ -10,9 +10,13 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import Foto from "./img/nwn.jpg";
 
+
 export default function AboutMe() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, display: 'flex',
+    flexWrap: 'wrap',
+    '& > :not(style)': {
+      m: 1} }}>
       <CardHeader
         title="Bianca Isabel Davila Davila"
         subheader="July 17, 2002"
