@@ -5,7 +5,7 @@ import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
 import HtmlIcon from "@mui/icons-material/Html";
 import CssIcon from "@mui/icons-material/Css";
 import JavascriptIcon from "@mui/icons-material/Javascript";
-import { teal } from "@mui/material/colors";
+import { teal, grey } from "@mui/material/colors";
 
 function ReactIcon(props) {
   return (
@@ -22,11 +22,11 @@ function ReactIcon(props) {
 
 export default function IconChips() {
   return (
-    <Stack direction="row" spacing={1}>
-      <Chip icon={<HtmlIcon />} label="HTML" variant="outlined"style={{color:teal[50],}} />
-      <Chip icon={<CssIcon />} label="Css" variant="outlined" style={{color:teal[50]}} />
-      <Chip icon={<JavascriptIcon />} label="Javascript" variant="outlined" style={{color:teal[50]}} />
-      <Chip icon={<ReactIcon viewBox="-11.5 -10.23174 23 20.46348" />} label="React" variant="outlined" style={{color:teal[50]}} />
+    <Stack direction="row" spacing={1} sx={{bg:grey[600]}}>
+      <Chip icon={<HtmlIcon />} label="HTML" style={{color:teal[50], backgroundColor:"grey"}} color="primary"/>
+      <Chip icon={<CssIcon />} label="Css"  style={{color:teal[50], backgroundColor:"grey"}} color="primary"/>
+      <Chip icon={<JavascriptIcon />} label="Javascript"  style={{color:teal[50], backgroundColor:"grey"}} color="primary"/>
+      <Chip icon={<ReactIcon viewBox="-11.5 -10.23174 23 20.46348" />} label="React"  style={{color:teal[50], backgroundColor:"grey"}} color="primary"/>
     </Stack>
   );
 }
