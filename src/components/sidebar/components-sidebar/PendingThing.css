@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pending-list{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  background-image: url(https://i.pinimg.com/564x/54/53/b6/5453b647fc23e5bf3ea3ce81380a6e19.jpg);
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  gap: 10px;
+  font-size: large;
+}
+
+.pending__list > li{
+  list-style-type: none;
+  flex: 1;
+}

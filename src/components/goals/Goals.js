@@ -5,14 +5,15 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Foto from "./img/goals.jpg";
+import { grey } from "@mui/material/colors";
 
 export default function Goals() {
   return(
     <Card sx={{ maxWidth: 360, display: 'flex',
     flexWrap: 'wrap',
     '& > :not(style)': {
-      m: 1,} }}>
-      <CardActionArea>
+      m: 1,}, backgroundColor:grey[300], textAlign:"center", justifyContent:"center"}}>
+      
         <CardMedia component="img" height="100" image={Foto} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -26,7 +27,7 @@ export default function Goals() {
             </ul>
           </Typography>
         </CardContent>
-      </CardActionArea>
+      
     </Card>
   );
 }

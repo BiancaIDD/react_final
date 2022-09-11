@@ -5,14 +5,15 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import proyecto2 from './img/proyecto2.png'
+import { grey } from '@mui/material/colors';
 
 
 export default function Card2() {
   return (
     <Card sx={{ maxWidth: 370, display: 'flex',
     '& > :not(style)': {
-      m: 1} }}>
-      <CardActionArea>
+      m: 1}, backgroundColor:grey[300], textAlign:"center", justifyContent:"center" }}>
+      <CardActionArea href='https://github.com/BiancaIDD/api_weather_js'>
         <CardMedia
           component="img"
           height="140"

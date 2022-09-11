@@ -4,6 +4,7 @@ import Card2 from "../../components/cardsProyects/Card2";
 import Card3 from "../../components/cardsProyects/Card3";
 import Card4 from "../../components/cardsProyects/Card4";
 import Navbar from "../../components/navbar/Nabvar";
+import SideBar from "../../components/sidebar/SideBar";
 import "./proyects.css";
 
 export default function Proyects() {
@@ -21,6 +22,7 @@ export default function Proyects() {
           <Card4 />
         </div>
       </div>
+      <SideBar/>
     </div>
   );
 }

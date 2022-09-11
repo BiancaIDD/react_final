@@ -4,6 +4,7 @@ import IconChips from "../../components/skills/Skills";
 import SoftSkills from "../../components/skills/SkillsSoft";
 import TextCard1 from "../../components/skills/textbox/TextBox1";
 import TextCard2 from "../../components/skills/textbox/Textbox2";
+import SideBar from "../../components/sidebar/SideBar";
 import "./MySkills.css";
 
 export default function MySkills() {
@@ -20,6 +21,7 @@ export default function MySkills() {
           <SoftSkills />
         </div>
       </div>
+      <SideBar/>
     </div>
   );
 }

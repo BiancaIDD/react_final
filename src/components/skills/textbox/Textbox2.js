@@ -6,7 +6,7 @@ import { grey } from "@mui/material/colors";
 
 export default function TextCard2() {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ minWidth: 275, backgroundColor:grey[300], textAlign:"center", justifyContent:"center" }}>
       <CardContent>
         <h1>My Soft Skills</h1>
         <Typography sx={{ fontSize: 20, width:300, color: grey[900] }}  gutterBottom>

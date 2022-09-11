@@ -4,6 +4,7 @@ import MyHobbies from "../../components/MyHobbies/MyHobbies";
 import Navbar from "../../components/navbar/Nabvar"
 import Goals from "../../components/goals/Goals"
 import "./Index.css"
+import SideBar from "../../components/sidebar/SideBar";
 
 
 export default function Index(){
@@ -16,6 +17,7 @@ export default function Index(){
       <MyHobbies/>
       <Goals/>
       </div>
+      <SideBar/>
     </div>
   )
 }

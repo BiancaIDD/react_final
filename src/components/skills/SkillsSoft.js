@@ -9,7 +9,7 @@ import { grey } from "@mui/material/colors";
 export default function SoftSkills() {
   return (
     <List
-      sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+      sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', backgroundColor:grey[300], textAlign:"center", justifyContent:"center" }}
       aria-label="contacts"
     >
       <ListItem disablePadding>

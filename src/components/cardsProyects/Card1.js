@@ -5,13 +5,14 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import proyecto1 from './img/proyecto1.png'
+import { grey } from '@mui/material/colors';
 
 export default function Card1() {
   return (
     <Card sx={{ maxWidth: 370, display: 'flex',
     '& > :not(style)': {
-      m: 1}}}>
-      <CardActionArea href="https://github.com/BiancaIDD/react_hooks">
+      m: 1}, backgroundColor:grey[300], textAlign:"center", justifyContent:"center"}}>
+      <CardActionArea href="https://github.com/BiancaIDD/react_todos">
         <CardMedia
           component="img"
           height="140"

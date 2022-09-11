@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import proyecto4 from "./img/proyecto4.png";
+import { grey } from "@mui/material/colors";
 
 export default function Card4() {
   return (
@@ -14,10 +15,10 @@ export default function Card4() {
         display: "flex",
         "& > :not(style)": {
           m: 1,
-        },
+        }, backgroundColor:grey[300], textAlign:"center", justifyContent:"center"
       }}
     >
-      <CardActionArea>
+      <CardActionArea href='https://github.com/BiancaIDD/api_cripto_js'>
         <CardMedia component="img" height="140" image={proyecto4} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
