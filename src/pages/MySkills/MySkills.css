@@ -10,4 +10,16 @@ color: white;
 .myskills__boxs{
   display: flex;
   align-items: center;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.myskills__card1, .myskills__card2{
+  display: flex;
+  width: 250;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }

@@ -23,10 +23,10 @@ function ReactIcon(props) {
 export default function IconChips() {
   return (
     <Stack direction="row" spacing={1}>
-      <Chip icon={<HtmlIcon />} label="HTML" variant="outlined"style={{color:teal[50],}} size="large"/>
-      <Chip icon={<CssIcon />} label="Css" variant="outlined" style={{color:teal[50]}} size="large"/>
-      <Chip icon={<JavascriptIcon />} label="Javascript" variant="outlined" style={{color:teal[50]}} size="large"/>
-      <Chip icon={<ReactIcon viewBox="-11.5 -10.23174 23 20.46348" />} label="React" variant="outlined" style={{color:teal[50]}} size="large"/>
+      <Chip icon={<HtmlIcon />} label="HTML" variant="outlined"style={{color:teal[50],}} />
+      <Chip icon={<CssIcon />} label="Css" variant="outlined" style={{color:teal[50]}} />
+      <Chip icon={<JavascriptIcon />} label="Javascript" variant="outlined" style={{color:teal[50]}} />
+      <Chip icon={<ReactIcon viewBox="-11.5 -10.23174 23 20.46348" />} label="React" variant="outlined" style={{color:teal[50]}} />
     </Stack>
   );
 }
