@@ -5,8 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
-import IconButton from '@mui/material/IconButton';
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import './SpotifyTrack.css'
 import { green } from '@mui/material/colors';
 
@@ -72,9 +71,9 @@ export default function TrackCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <Link to={track.spotify_link}>
+        <Navigate to={track.spotify_link}>
           <SpotifyIcon/>
-        </Link>
+        </Navigate>
       </CardActions>
     </Card>
   );
