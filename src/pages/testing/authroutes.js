@@ -17,7 +17,7 @@ function AuthWelcome(){
   )
 }
 export default function AuthTesting(){
-  const [isAuth, setAuth]= useState(true)
+  const [isAuth, setAuth]= useState(false)
   if(isAuth){
     return (<AuthWelcome/>)
   }else{
