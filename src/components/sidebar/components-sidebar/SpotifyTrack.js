@@ -72,11 +72,11 @@ export default function TrackCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <Navigate to={track.spotify_link}>
-          <IconButton>
+        <IconButton>
+          <Navigate to={track.spotify_link}>
           <SpotifyIcon/>
-          </IconButton>
         </Navigate>
+        </IconButton>
       </CardActions>
     </Card>
   );
