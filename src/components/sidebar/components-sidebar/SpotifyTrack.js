@@ -8,6 +8,7 @@ import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
 import { Link, Navigate } from "react-router-dom";
 import './SpotifyTrack.css'
 import { green } from '@mui/material/colors';
+import { IconButton } from '@mui/material';
 
 
 function SpotifyIcon(props) {
@@ -72,7 +73,9 @@ export default function TrackCard() {
       </CardContent>
       <CardActions disableSpacing>
         <Navigate to={track.spotify_link}>
+          <IconButton>
           <SpotifyIcon/>
+          </IconButton>
         </Navigate>
       </CardActions>
     </Card>
